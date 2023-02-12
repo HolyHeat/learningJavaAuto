@@ -14,6 +14,8 @@ public class CountObjectOnThePage {
                 try {
                         driver.get("https://home.luxoft.com/");
                         Thread.sleep(10000);
+                        driver.findElement(By.xpath("//*[@id=\"tilesHolder\"]/div[2]/div/div")).click();
+                        Thread.sleep(5000);
                         driver.findElement(By.xpath("/html/body/app-root/app-start-screen/app-header/div/div[2]/div/app-input-search/div/app-clear-wrap/div/input")).sendKeys("BSS Core" + Keys.RETURN) ;
                         Thread.sleep(5000);
 
